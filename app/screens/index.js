@@ -1,1 +1,3 @@
-export { default as Songs } from './Songs';
+import StoreFront from './StoreFront';
+
+export { StoreFront };

@@ -1,3 +1,3 @@
-import SongsCell from './SongsCell.stories';
+import ProductCard from './ProductCard.stories';
 
-export { SongsCell };
+export { ProductCard };

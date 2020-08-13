@@ -1,4 +1,5 @@
 import axios from 'axios';
+import config from '../config';
 
 export async function callApi(authOptions) {
   const returnVal = {};
@@ -26,6 +27,7 @@ export const apiRequest = ({ apiUrl, method, payload }) => {
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json',
+      'secret-key': config.apiSecretKey,
     },
     json: true,
   };
@@ -36,6 +38,7 @@ export const apiRequest = ({ apiUrl, method, payload }) => {
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
+        'secret-key': config.apiSecretKey,
       },
       json: true,
     };

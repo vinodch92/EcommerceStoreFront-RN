@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import * as SongsState from './SongsState';
+import * as ProductsState from './ProductsState';
 
 const rootReducer = combineReducers({
-  songs: SongsState.songsSliceReducer,
+  products: ProductsState.productsSliceReducer,
 });
-export { rootReducer, SongsState };
+export { rootReducer, ProductsState };

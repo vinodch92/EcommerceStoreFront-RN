@@ -19,17 +19,8 @@ jest.mock('react-redux', () => ({
   useSelector: jest.fn((data) => data),
 }));
 
-jest.mock('../app/state/SongsState', () => {
+jest.mock('../app/state/ProductsState', () => {
   return {
-    saveSongs: jest.fn(),
+    saveProducts: jest.fn(),
   };
 });
-
-jest.mock('react-redux', () => ({
-  useStore: () => '',
-  useDispatch: () => '',
-}));
-
-jest.mock('redux', () => ({
-  combineReducers: () => '',
-}));

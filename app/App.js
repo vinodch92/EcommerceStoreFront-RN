@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import config from './config';
 import StorybookUIRoot from '../storybook';
-import { Songs } from './screens';
+import { StoreFront } from './screens';
 
 const App = () => {
   if (config.storybookEnabled) {
@@ -10,7 +10,7 @@ const App = () => {
   }
   return (
     <Provider store={config.store}>
-      <Songs />
+      <StoreFront />
     </Provider>
   );
 };
